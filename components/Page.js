@@ -9,22 +9,26 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
   body {
-    height: 100%
+    height: 100%;
+    margin: 0;
   }
+
 `;
 
 const StyledPage = styled.div`
-  background: white;
+  background: none;
 `;
 
 class Page extends React.Component {
   render() {
     return (
-      <StyledPage>
-        <GlobalStyle />
-        <Navigation />
-        {this.props.children}
-      </StyledPage>
+      <React.Fragment>
+        {/* <Navigation /> */}
+        <StyledPage>
+          <GlobalStyle />
+          {this.props.children}
+        </StyledPage>
+      </React.Fragment>
     );
   }
 }
