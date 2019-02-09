@@ -11,7 +11,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     margin: 0;
-  }
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     }
+     p {
+       line-height: 1.75;
+     }
+    
 
 `;
 
